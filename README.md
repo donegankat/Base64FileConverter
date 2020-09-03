@@ -1,7 +1,9 @@
 # Introduction 
-This is a Windows Forms Application written using the .NET Core 3.1 framework.
+This is a Windows Forms application written using the .NET Core 3.1 framework.
 
 This app is designed to convert files to Base64 strings (both decompressed and deflated/compressed) and to convert Base64 strings (both decompressed and deflated/compressed) into files.
+
+This Windows Forms application is a more user-friendly successor to the console application version [Base64FileConverterConsole](https://github.com/donegankat/Base64FileConverterConsole).
 
 # Getting Started
 Select a run mode when the application starts up.
