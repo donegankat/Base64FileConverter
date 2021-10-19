@@ -54,8 +54,8 @@
 			this._lblSaveFileResult = new System.Windows.Forms.Label();
 			this._btnSaveBase64ToFile = new System.Windows.Forms.Button();
 			this._btnSelectFileToSaveBase64 = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
+			this._lblBase64ToFileDestinationHelpText = new System.Windows.Forms.Label();
+			this._lblBase64ToConvertDecompressionHelpText = new System.Windows.Forms.Label();
 			this._lblBase64ToConvertToFile = new System.Windows.Forms.Label();
 			this._txtBase64ToConvertToFile = new System.Windows.Forms.RichTextBox();
 			this._dlgSelectFileToConvertToBase64 = new System.Windows.Forms.OpenFileDialog();
@@ -120,7 +120,7 @@
 			// 
 			this._btnBackToModeSelect.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this._btnBackToModeSelect.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this._btnBackToModeSelect.Location = new System.Drawing.Point(37, 10);
+			this._btnBackToModeSelect.Location = new System.Drawing.Point(37, 13);
 			this._btnBackToModeSelect.Name = "_btnBackToModeSelect";
 			this._btnBackToModeSelect.Size = new System.Drawing.Size(316, 46);
 			this._btnBackToModeSelect.TabIndex = 12;
@@ -151,7 +151,7 @@
 			// 
 			this._lblHeaderConvertFileToBase64.AutoSize = true;
 			this._lblHeaderConvertFileToBase64.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this._lblHeaderConvertFileToBase64.Location = new System.Drawing.Point(36, 9);
+			this._lblHeaderConvertFileToBase64.Location = new System.Drawing.Point(30, 9);
 			this._lblHeaderConvertFileToBase64.Name = "_lblHeaderConvertFileToBase64";
 			this._lblHeaderConvertFileToBase64.Size = new System.Drawing.Size(440, 50);
 			this._lblHeaderConvertFileToBase64.TabIndex = 13;
@@ -160,7 +160,7 @@
 			// _lblFileToConvertToBase64
 			// 
 			this._lblFileToConvertToBase64.AutoSize = true;
-			this._lblFileToConvertToBase64.Location = new System.Drawing.Point(37, 79);
+			this._lblFileToConvertToBase64.Location = new System.Drawing.Point(27, 79);
 			this._lblFileToConvertToBase64.Name = "_lblFileToConvertToBase64";
 			this._lblFileToConvertToBase64.Size = new System.Drawing.Size(176, 32);
 			this._lblFileToConvertToBase64.TabIndex = 12;
@@ -170,7 +170,7 @@
 			// 
 			this._lblDecompressedBase64.AutoSize = true;
 			this._lblDecompressedBase64.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this._lblDecompressedBase64.Location = new System.Drawing.Point(37, 136);
+			this._lblDecompressedBase64.Location = new System.Drawing.Point(27, 134);
 			this._lblDecompressedBase64.Name = "_lblDecompressedBase64";
 			this._lblDecompressedBase64.Size = new System.Drawing.Size(340, 45);
 			this._lblDecompressedBase64.TabIndex = 11;
@@ -180,7 +180,7 @@
 			// 
 			this._lblDeflatedBase64.AutoSize = true;
 			this._lblDeflatedBase64.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this._lblDeflatedBase64.Location = new System.Drawing.Point(37, 544);
+			this._lblDeflatedBase64.Location = new System.Drawing.Point(27, 544);
 			this._lblDeflatedBase64.Name = "_lblDeflatedBase64";
 			this._lblDeflatedBase64.Size = new System.Drawing.Size(455, 45);
 			this._lblDeflatedBase64.TabIndex = 10;
@@ -213,7 +213,7 @@
 			this._btnExecuteConvertFileToBase64.BackColor = System.Drawing.SystemColors.ControlDark;
 			this._btnExecuteConvertFileToBase64.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this._btnExecuteConvertFileToBase64.ForeColor = System.Drawing.SystemColors.ControlText;
-			this._btnExecuteConvertFileToBase64.Location = new System.Drawing.Point(1229, 72);
+			this._btnExecuteConvertFileToBase64.Location = new System.Drawing.Point(1209, 72);
 			this._btnExecuteConvertFileToBase64.Name = "_btnExecuteConvertFileToBase64";
 			this._btnExecuteConvertFileToBase64.Size = new System.Drawing.Size(150, 46);
 			this._btnExecuteConvertFileToBase64.TabIndex = 7;
@@ -241,14 +241,14 @@
 			// 
 			// _txtFileToConvertToBase64
 			// 
-			this._txtFileToConvertToBase64.Location = new System.Drawing.Point(219, 76);
+			this._txtFileToConvertToBase64.Location = new System.Drawing.Point(199, 76);
 			this._txtFileToConvertToBase64.Name = "_txtFileToConvertToBase64";
 			this._txtFileToConvertToBase64.Size = new System.Drawing.Size(839, 39);
 			this._txtFileToConvertToBase64.TabIndex = 4;
 			// 
 			// _btnSelectFileToConvertToBase64
 			// 
-			this._btnSelectFileToConvertToBase64.Location = new System.Drawing.Point(1064, 72);
+			this._btnSelectFileToConvertToBase64.Location = new System.Drawing.Point(1044, 72);
 			this._btnSelectFileToConvertToBase64.Name = "_btnSelectFileToConvertToBase64";
 			this._btnSelectFileToConvertToBase64.Size = new System.Drawing.Size(150, 46);
 			this._btnSelectFileToConvertToBase64.TabIndex = 3;
@@ -260,7 +260,7 @@
 			// 
 			this._lblHeaderConvertBase64ToFile.AutoSize = true;
 			this._lblHeaderConvertBase64ToFile.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this._lblHeaderConvertBase64ToFile.Location = new System.Drawing.Point(36, 9);
+			this._lblHeaderConvertBase64ToFile.Location = new System.Drawing.Point(30, 9);
 			this._lblHeaderConvertBase64ToFile.Name = "_lblHeaderConvertBase64ToFile";
 			this._lblHeaderConvertBase64ToFile.Size = new System.Drawing.Size(440, 50);
 			this._lblHeaderConvertBase64ToFile.TabIndex = 13;
@@ -269,7 +269,7 @@
 			// _lblFileToSaveFromBase64
 			// 
 			this._lblFileToSaveFromBase64.AutoSize = true;
-			this._lblFileToSaveFromBase64.Location = new System.Drawing.Point(46, 714);
+			this._lblFileToSaveFromBase64.Location = new System.Drawing.Point(38, 714);
 			this._lblFileToSaveFromBase64.Name = "_lblFileToSaveFromBase64";
 			this._lblFileToSaveFromBase64.Size = new System.Drawing.Size(185, 32);
 			this._lblFileToSaveFromBase64.TabIndex = 12;
@@ -277,7 +277,7 @@
 			// 
 			// _txtFileToSaveFromBase64
 			// 
-			this._txtFileToSaveFromBase64.Location = new System.Drawing.Point(237, 711);
+			this._txtFileToSaveFromBase64.Location = new System.Drawing.Point(221, 711);
 			this._txtFileToSaveFromBase64.Name = "_txtFileToSaveFromBase64";
 			this._txtFileToSaveFromBase64.Size = new System.Drawing.Size(839, 39);
 			this._txtFileToSaveFromBase64.TabIndex = 4;
@@ -288,8 +288,8 @@
 			this._pnlBase64ToFile.Controls.Add(this._lblSaveFileResult);
 			this._pnlBase64ToFile.Controls.Add(this._btnSaveBase64ToFile);
 			this._pnlBase64ToFile.Controls.Add(this._btnSelectFileToSaveBase64);
-			this._pnlBase64ToFile.Controls.Add(this.label2);
-			this._pnlBase64ToFile.Controls.Add(this.label1);
+			this._pnlBase64ToFile.Controls.Add(this._lblBase64ToFileDestinationHelpText);
+			this._pnlBase64ToFile.Controls.Add(this._lblBase64ToConvertDecompressionHelpText);
 			this._pnlBase64ToFile.Controls.Add(this._lblBase64ToConvertToFile);
 			this._pnlBase64ToFile.Controls.Add(this._txtBase64ToConvertToFile);
 			this._pnlBase64ToFile.Controls.Add(this._lblHeaderConvertBase64ToFile);
@@ -305,7 +305,7 @@
 			// 
 			this._lblSaveFileResult.AutoSize = true;
 			this._lblSaveFileResult.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-			this._lblSaveFileResult.Location = new System.Drawing.Point(219, 841);
+			this._lblSaveFileResult.Location = new System.Drawing.Point(210, 840);
 			this._lblSaveFileResult.Name = "_lblSaveFileResult";
 			this._lblSaveFileResult.Size = new System.Drawing.Size(206, 32);
 			this._lblSaveFileResult.TabIndex = 13;
@@ -316,7 +316,7 @@
 			// 
 			this._btnSaveBase64ToFile.BackColor = System.Drawing.SystemColors.ControlDark;
 			this._btnSaveBase64ToFile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-			this._btnSaveBase64ToFile.Location = new System.Drawing.Point(46, 834);
+			this._btnSaveBase64ToFile.Location = new System.Drawing.Point(37, 833);
 			this._btnSaveBase64ToFile.Name = "_btnSaveBase64ToFile";
 			this._btnSaveBase64ToFile.Size = new System.Drawing.Size(167, 46);
 			this._btnSaveBase64ToFile.TabIndex = 18;
@@ -326,7 +326,7 @@
 			// 
 			// _btnSelectFileToSaveBase64
 			// 
-			this._btnSelectFileToSaveBase64.Location = new System.Drawing.Point(1082, 707);
+			this._btnSelectFileToSaveBase64.Location = new System.Drawing.Point(1066, 707);
 			this._btnSelectFileToSaveBase64.Name = "_btnSelectFileToSaveBase64";
 			this._btnSelectFileToSaveBase64.Size = new System.Drawing.Size(150, 46);
 			this._btnSelectFileToSaveBase64.TabIndex = 13;
@@ -334,33 +334,33 @@
 			this._btnSelectFileToSaveBase64.UseVisualStyleBackColor = true;
 			this._btnSelectFileToSaveBase64.Click += new System.EventHandler(this._btnSelectFileToSaveBase64_Click);
 			// 
-			// label2
+			// _lblBase64ToFileDestinationHelpText
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-			this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-			this.label2.Location = new System.Drawing.Point(237, 753);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(623, 30);
-			this.label2.TabIndex = 17;
-			this.label2.Text = "Specify the complete file path including the file name and extension.";
+			this._lblBase64ToFileDestinationHelpText.AutoSize = true;
+			this._lblBase64ToFileDestinationHelpText.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+			this._lblBase64ToFileDestinationHelpText.ForeColor = System.Drawing.SystemColors.GrayText;
+			this._lblBase64ToFileDestinationHelpText.Location = new System.Drawing.Point(221, 753);
+			this._lblBase64ToFileDestinationHelpText.Name = "_lblBase64ToFileDestinationHelpText";
+			this._lblBase64ToFileDestinationHelpText.Size = new System.Drawing.Size(623, 30);
+			this._lblBase64ToFileDestinationHelpText.TabIndex = 17;
+			this._lblBase64ToFileDestinationHelpText.Text = "Specify the complete file path including the file name and extension.";
 			// 
-			// label1
+			// _lblBase64ToConvertDecompressionHelpText
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-			this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-			this.label1.Location = new System.Drawing.Point(46, 104);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(1042, 30);
-			this.label1.TabIndex = 16;
-			this.label1.Text = "Decompresseion will be attempted before file conversion, so either decompressed o" +
-    "r deflated (compressed) will work.";
+			this._lblBase64ToConvertDecompressionHelpText.AutoSize = true;
+			this._lblBase64ToConvertDecompressionHelpText.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+			this._lblBase64ToConvertDecompressionHelpText.ForeColor = System.Drawing.SystemColors.GrayText;
+			this._lblBase64ToConvertDecompressionHelpText.Location = new System.Drawing.Point(38, 104);
+			this._lblBase64ToConvertDecompressionHelpText.Name = "_lblBase64ToConvertDecompressionHelpText";
+			this._lblBase64ToConvertDecompressionHelpText.Size = new System.Drawing.Size(1042, 30);
+			this._lblBase64ToConvertDecompressionHelpText.TabIndex = 16;
+			this._lblBase64ToConvertDecompressionHelpText.Text = "Decompresseion will be attempted before file conversion, so either decompressed o" +
+	"r deflated (compressed) will work.";
 			// 
 			// _lblBase64ToConvertToFile
 			// 
 			this._lblBase64ToConvertToFile.AutoSize = true;
-			this._lblBase64ToConvertToFile.Location = new System.Drawing.Point(46, 72);
+			this._lblBase64ToConvertToFile.Location = new System.Drawing.Point(38, 72);
 			this._lblBase64ToConvertToFile.Name = "_lblBase64ToConvertToFile";
 			this._lblBase64ToConvertToFile.Size = new System.Drawing.Size(221, 32);
 			this._lblBase64ToConvertToFile.TabIndex = 15;
@@ -389,9 +389,9 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1434, 1049);
 			this.Controls.Add(this._pnlBackToModeSelect);
+			this.Controls.Add(this._pnlBase64ToFile);
 			this.Controls.Add(this._pnlFileToBase64);
 			this.Controls.Add(this._pnlSelectRunMode);
-			this.Controls.Add(this._pnlBase64ToFile);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Base64FileConverterForm";
 			this.Text = "Base 64 File Converter";
@@ -430,12 +430,12 @@
 		private System.Windows.Forms.Label _lblHeaderConvertBase64ToFile;
 		private System.Windows.Forms.Label _lblFileToConvertToBase64;
 		private System.Windows.Forms.Label _lblFileToSaveFromBase64;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label _lblBase64ToConvertDecompressionHelpText;
 		private System.Windows.Forms.Label _lblBase64ToConvertToFile;
 		private System.Windows.Forms.RichTextBox _txtBase64ToConvertToFile;
 		private System.Windows.Forms.Button _btnSaveBase64ToFile;
 		private System.Windows.Forms.Button _btnSelectFileToSaveBase64;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label _lblBase64ToFileDestinationHelpText;
 		private System.Windows.Forms.SaveFileDialog _dlgSaveBase64ToFile;
 		private System.Windows.Forms.Label _lblSaveFileResult;
 		private System.Windows.Forms.Label _lblHeaderSelectRunMode;
